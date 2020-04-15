@@ -7,7 +7,7 @@
 
 # 界面展示
 
-<img src="https://attachments-cdn.shimo.im/yuNu2GHoVb4UjEVX/WX20200413-181240_2x.png" width = "100" height = "100" div align=right />
+<img src="https://attachments-cdn.shimo.im/yuNu2GHoVb4UjEVX/WX20200413-181240_2x.png" width = "500" div align=center />
 ![image](https://attachments-cdn.shimo.im/yuNu2GHoVb4UjEVX/WX20200413-181240_2x.png =100x100)
 
 ![image](https://attachments-cdn.shimo.im/Mc7fLQoFWzQrFij1.png =100x100)
