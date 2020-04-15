@@ -7,6 +7,6 @@
 
 # 界面展示
 
-<img src="https://attachments-cdn.shimo.im/yuNu2GHoVb4UjEVX/WX20200413-181240_2x.png" width = "300" div align=left />
-<img src="https://attachments-cdn.shimo.im/Mc7fLQoFWzQrFij1.png" width = "300" div align=center />
-<img src="https://attachments-cdn.shimo.im/hLWHt7Z48EoPTVI9.png" width = "300" div align=right />
+<img src="https://attachments-cdn.shimo.im/yuNu2GHoVb4UjEVX/WX20200413-181240_2x.png" width = "260" div align=left />
+<img src="https://attachments-cdn.shimo.im/Mc7fLQoFWzQrFij1.png" width = "260" div align=center />
+<img src="https://attachments-cdn.shimo.im/hLWHt7Z48EoPTVI9.png" width = "260" div align=right />
