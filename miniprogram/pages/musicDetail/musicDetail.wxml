@@ -1,0 +1,23 @@
+<view style="width:750rpx;height:100vh;" class="pof">
+  <view class="poa" style="width:750rpx;height:60vh;top:0;left:0;">
+    <image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2785579709,4154210798&fm=26&gp=0.jpg" style="width:750rpx;height:60vh;z-index:1;" mode="aspectFill" />
+    <view style="bottom:110rpx;z-index:2;" class="por flex-r jcenter center">
+      <view style="color:#fff;font-size: 24rpx;">{{musicProgress}}</view>
+      <slider step="1" value="{{timeNum}}" max="{{musicTimeNum}}"
+backgroundColor="RGBA(255,255,255,.4)" activeColor="#fff" bindchange="slideBar" bindchanging='onSlideBar' block-size='12' style="width: 500rpx;" />
+      <view style="color:#fff;font-size: 24rpx;">{{musicTime}}</view>
+    </view>
+  </view>
+  
+  
+  <view style="width:750rpx;height:40vh;bottom:0;left:0;" class="flex jcenter poa">
+
+    <view style="color:#222945;font-size: 46rpx;margin-top:60rpx;font-weight: 300;">南方姑娘</view>
+
+    <image src="../../images/zanting.png" mode="widthFix" style="width:100rpx;height:100rpx;bottom: 50rpx;transition:all 1s;" class="poa animated1s flipInY" catchtap="play" wx:if='{{isPlay}}'></image>
+    <image src="../../images/play.png" mode="widthFix" style="width:100rpx;height:100rpx;bottom: 50rpx;transition:all 1s;" class="poa animated1s flipInY" catchtap="play" wx:if='{{!isPlay}}'></image>
+
+    <image src="../../images/share.png" mode="widthFix" style="width:50rpx;height:50rpx;bottom: 70rpx;right:83rpx;" class="poa"></image>
+    <image src="../../images/like.png" mode="widthFix" style="width:50rpx;height:50rpx;bottom: 70rpx;left:83rpx;" class="poa"></image>
+  </view>
+</view>

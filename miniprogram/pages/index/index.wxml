@@ -1,0 +1,63 @@
+<view class="animated2s fadeIn">
+
+
+<view class="flex-c" style="margin:110rpx 0 0 40rpx;">
+  <view style="font-weight:900;color:#000;">艺术·家</view>
+  <view style="color:#999999;">分享音乐·生活·工作</view>
+</view>
+
+<view class='pof flex center jcenter' style='width:100%;height:100%;left:0;top:0;'> 
+    <swiper style="height:72vh;width: 100%;margin-top:60rpx;" previous-margin='100rpx' next-margin='60rpx'>
+    <block wx:for='{{homeData}}' wx:key='index'>
+        <swiper-item catchtap='intoDetail' data-item='{{item}}'>  
+          <view style="background: black; width: 550rpx; height: 100%;" class="por">
+            <image src="{{item.image}}" style="width:550rpx;" mode="widthFix"></image>
+            <view style="color:#fff;font-weight:100;margin:40rpx auto 0;width:460rpx;font-size: 26rpx;">{{item.content}}</view>
+            <view class="poa" style="bottom:20rpx;right:20rpx;color:#fff;font-weight:100;font-size: 26rpx;">{{item.author}}</view>
+          </view>
+        </swiper-item>
+       </block> 
+    </swiper>
+</view>
+
+
+
+
+<view class="pof" style="right:30rpx;bottom:4.2%;color:#999999;font-size:16rpx;">
+  Designed by Zhouhao
+</view>
+<!-- <view class="flex-r center pof" style="right:30rpx;bottom:5.6%;">
+  <view style="color:#999999;font-size:24rpx;">查看完整</view>
+  <image src="../../images/next.png" style="width:40rpx;margin-left:10rpx;" mode="widthFix" />
+</view> -->
+
+
+</view>
+
+
+
+
+
+
+
+
+
+<!-- <view class="flex-r" style="margin:500rpx 0 0 200rpx;">
+  <image src="https://img.zcool.cn/community/0150de5a66f375a8012113c7fb8343.gif" style="width:108rpx;height:108rpx;"></image>
+  <view class="flex-c">
+    <view style="color:red;font-size:48rpx;font-weight:900;">Zhouhao</view>
+    <view class="flex-r center">
+      <view style="color:red;font-size:36rpx;font-weight:900;">Music</view>
+      <view style="color:#000;font-size:20rpx;margin-left:12rpx;">欢迎周浩的音乐小屋</view>
+    </view>
+  </view>
+</view>
+
+<view class="flex-r around" style="margin-top:200rpx;">
+  <view style="width:240rpx;height:240rpx;background:red;margin-left:80rpx;" class="flex-r center jcenter" animation="{{animationData1}}" catchtap="intoMusic">
+      <view class="fs46" style="color:#fff;">Music</view>
+  </view>
+   <view style="width:240rpx;height:240rpx;background:red;margin-right:80rpx;" class="animated fadeInUp" class="flex-r center jcenter" animation="{{animationData2}}" catchtap="intoArtcle">
+      <view class="fs46" style="color:#fff;">Article</view>
+   </view>
+</view> -->

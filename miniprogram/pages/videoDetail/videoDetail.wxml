@@ -1,0 +1,40 @@
+<view class="animated fadeIn">
+
+<video src='{{videoData.videoUrl}}' style='width:750rpx;' object-fit='fill'></video>
+
+<view style="color:#999999;margin:20rpx 0 0 30rpx;">所有评论</view>
+
+
+<view class="flex-c center" style="margin-top: 150rpx;" wx:if='{{videoData.comment.length==0}}'>
+  <image src="../../images/quesheng.png" style="width: 196rpx;" mode='widthFix'></image>
+  <view style="color:#999999;margin-top: 13rpx;">还没有评论哦！</view>
+</view>
+
+<scroll-view scroll-y style="height:50vh;" wx:if='{{videoData.comment.length>0}}'>
+  <block wx:for='{{videoData.comment}}'>
+    <view class="flex-c animated1s fadeInLeft" style="margin-left:30rpx;margin-top: 20rpx;{{'animation-delay:' + index * 0.1 + 's'}}" >
+      <view class="flex-r">
+        <image src="{{item.avatarUrl}}" style='width:82rpx;height:82rpx;border-radius:50rpx;'></image>
+        <view class="flex-c" style="margin-left:20rpx;margin-top:3rpx;">
+          <view>{{item.nickName}}</view>
+          <view style="color:#999999;font-size:24rpx;">{{item.time}}</view>
+        </view>
+      </view>
+      <view style="font-size:25rpx;margin-top:6rpx;padding:0 45rpx 0 100rpx;">{{item.content}}</view>
+    </view>
+  </block>
+</scroll-view>
+
+
+
+
+
+<view class="pof" style="bottom:40rpx;left:0;width:750rpx;height:80rpx;">
+  <input style="border:1px solid gray;width:77%;height:95%;left:24rpx;border-radius:10rpx;padding-left:20rpx;color:black;font-size: 26rpx;" class="poa" bindinput='inputChange' value='{{content}}'></input>
+  <image src="../../images/fa.png" style="width:50rpx;right:36rpx;top:10rpx;" mode="widthFix" class="poa" catchtap="send"></image>
+</view>
+
+
+
+
+</view>
